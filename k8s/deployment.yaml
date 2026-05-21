@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: brew-haven
-        image: YOUR_DOCKER_USERNAME/brew-haven:latest
+        image: parasbajaj/brew-haven:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
