@@ -11,8 +11,6 @@ IMAGE_NAME: parasbajaj/brew-haven
 jobs:
 build-and-push:
 runs-on: ubuntu-latest
-
-```
 steps:
   - name: Checkout Repository
     uses: actions/checkout@v4
@@ -48,4 +46,4 @@ steps:
       echo "Tag: ${SHA_TAG}"
       echo "To update Minikube run:"
       echo "kubectl rollout restart deployment brew-haven"
-```
+
