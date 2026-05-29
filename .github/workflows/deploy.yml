@@ -1,12 +1,12 @@
 name: Brew Haven CI/CD
 
 on:
-push:
-branches:
-- main
+  push:
+    branches:
+      - main
 
 env:
-IMAGE_NAME: parasbajaj/brew-haven
+  IMAGE_NAME: parasbajaj/brew-haven
 
 jobs:
   build-and-push:
