@@ -1,5 +1,5 @@
-FROM python:3.11-alpine
-WORKDIR /app
-COPY . .
-EXPOSE 8000
-CMD ["python", "-m", "http.server", "8000"]
+FROM nginx:alpine
+
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
