@@ -41,4 +41,5 @@ jobs:
           echo "Docker image pushed successfully."
           echo "Tag: $SHA_TAG"
           echo "Run on Minikube:"
+          echo "kubectl apply -f k8s/deployment.yaml"
           echo "kubectl rollout restart deployment brew-haven"
